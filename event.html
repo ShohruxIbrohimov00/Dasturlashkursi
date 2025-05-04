@@ -1,0 +1,556 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Taqdimotlar</title>
+    <meta name="description" content="Thompson School Python Backend Kursi Taqdimoti">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.svg">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/plugins/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/icomoon.css">
+    <link rel="stylesheet" href="assets/css/vendor/spacing.css">
+    <link rel="stylesheet" href="assets/css/plugins/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- preloader start -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="bd-preloader-content">
+                    <div class="bd-preloader-logo">
+                        <div class="bd-preloader-circle">
+                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle stroke="#F5F5F5" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                            </svg>
+                        </div>
+                        <img src="assets/images/logo/preloader-icon.png" alt="">
+                    </div>
+                    <p class="bd-preloader-subtitle">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- Header area start -->
+    <header>
+        <div class="bd-header-transparent-two">
+            <div class="bd-header-area header-style-one" id="header-sticky">
+                <div class="bd-header-inner">
+                    <div class="bd-header-left">
+                        <div class="bd-header-logo">
+                            <a href="index.html" style="font-weight: bold; font-size: 24px; text-decoration: none; color:#07A169;">Dasturlash</a>
+                        </div>
+                        <div class="bd-header-category d-none d-lg-block">
+                            <div class="bd-category-btn">
+                                <i class="fa-solid fa-grid"></i> Bo'limlar
+                            </div>
+                            <div class="bd-category-dropdown">
+                                <nav>
+                                    <ul>
+                                        <li><a href="course.html">Backend Dasturlash kursi</a></li>
+                                        <li><a href="event.html">Taqdimotlar</a></li>
+                                        <li><a href="price.html">Chegirmalar</a></li>
+                                        <li><a href="contact.html">Biz bilan bog'laning</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-header-menu">
+                        <nav class="main-menu bd-mobile-menu-active d-none d-xl-block">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="index.html">Uy</a>    
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="course.html">Dasturlash kursi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="event.html">Taqdimotlar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="price.html">Chegirmalar</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="contact.html">Biz bilan bog'laning</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="bd-header-right">
+                        <div class="bd-header-meta">
+                            <button class="bd-search-open-btn meta-icon" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="bd-header-hamburger">
+                            <div class="sidebar-toggle">
+                                <a class="bar-icon" href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="bd-offcanvas-area">
+            <div class="bd-offcanvas-wrapper">
+                <div class="bd-offcanvas-content">
+                    <div class="bd-offcanvas-top d-flex justify-content-between align-items-center mb-30">
+                        <div class="bd-offcanvas-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.svg" alt="logo not found">
+                            </a>
+                        </div>
+                        <div class="bd-offcanvas-close">
+                            <button class="bd-offcanvas-close-icon animation--flip">
+                                <span class="bd-offcanvas-m-lines">
+                                    <span class="bd-offcanvas-m-line line--1"></span>
+                                    <span class="bd-offcanvas-m-line line--2"></span>
+                                    <span class="bd-offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bd-offcanvas-search mb-30">
+                        <form action="#">
+                            <input type="text" name="bd-offcanvasSearch" placeholder="Search here">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="bd-mobile-menu-smaller">
+                        <div class="bd-offcanvas-menu mb-30">
+                            <nav></nav>
+                        </div>
+                    </div>
+                    <div class="bd-offcanvas-about d-none d-lg-block mb-30">
+                        <h4 class="bd-offcanvas-title-meta">Thompson School haqida</h4>
+                        <p>Thompson School dasturlash kurslari haqida batafsil ma'lumot olishingiz mumkin.</p>
+                    </div>
+                    <div class="bd-offcanvas-social">
+                        <h4 class="bd-offcanvas-title-meta">Bizni kuzatib boring</h4>
+                        <div class="theme-social">
+                            <ul class="social-icon-list">
+                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bd-offcanvas-overlay"></div>
+    <div class="bd-offcanvas-overlay-white"></div>
+    <!-- Offcanvas area end -->
+
+    <!-- search popup area start -->
+    <div class="bd-search-popup-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bd-search-popup">
+                        <div class="bd-search-form">
+                            <form action="#">
+                                <div class="bd-search-input">
+                                    <input type="search" name="search" placeholder="Type here to search ...">
+                                    <div class="bd-search-submit">
+                                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="bd-search-close">
+                                <div class="bd-search-close-btn">
+                                    <button><i class="fa-thin fa-close"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search popup overlay -->
+    <div class="bd-search-overlay"></div>
+    <!-- search popup area end -->
+
+    <!-- Body main wrapper start -->
+    <main>
+        <!-- breadcrumb area start -->
+        <section class="bd-breadcrumb-area p-relative fix z-index-11">
+            <div class="bd-breadcrumb-bg-two" data-background="assets/images/breadcrumb/c.png"></div>
+            <div class="bd-breadcrumb-wrapper p-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="bd-breadcrumb style-two d-flex-center">
+                                <div class="bd-breadcrumb-content">
+                                    <h1 class="bd-breadcrumb-title">Python Backend Kursi Taqdimoti</h1>
+                                    <div class="bd-breadcrumb-list justify-content-start">
+                                        <span><a href="index.html">Thompson School</a></span>
+                                        <span class="divider"><i class="fa-regular fa-angle-right"></i></span>
+                                        <span class="active">Python Backend Kursi Taqdimoti</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-breadcrumb-shape">
+                        <div class="shape-1"><img src="assets/images/shape/breadcrumb-shape-1.webp" alt="shape"></div>
+                        <div class="shape-3"><img src="assets/images/shape/bulb-shape.webp" alt="shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area end -->
+
+        <!-- event details area start -->
+        <section class="bd-event-details-area section-space">
+            <div class="container">
+                <div class="row gy-30">
+                    <div class="col-xl-12">
+                        <div class="bd-event-main-thumb">
+                            <img src="assets/images/event/event-details-thumb.webp" alt="Python Backend Taqdimoti">
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-xl-8 col-lg-7 col-md-12">
+                        <div class="bd-even-details-content">
+                            <div class="bd-even-details-heading mb-30">
+                                <h2 class="bd-course-details-title">Python Backend Kursi Taqdimoti</h2>
+                            </div>
+                            <div class="bd-event-details-content mb-30">
+                                <h3 class="bd-details-content-title">Umumiy ko'rinish</h3>
+                                <p class="description">
+                                    Thompson School Dasturlash Akademiyasining Python Backend kursi taqdimotiga xush kelibsiz! Ushbu tadbirda siz Tashkentdagi offline ta'limimiz, Django va PostgreSQL kabi zamonaviy texnologiyalar, Telegram botlari yaratish va amaliy loyihalar orqali IT sohasida karyera boshlash imkoniyatlari haqida bilib olasiz. Tajribali o'qituvchilarimiz kurs dasturi va o'quv jarayoni haqida batafsil ma'lumot beradi.
+                                </p>
+                            </div>
+                            <div class="bd-event-details-content mb-30">
+                                <h3 class="bd-details-content-title">O'quv natijalari</h3>
+                                <div class="bd-post-details-list">
+                                    <ul>
+                                        <li>Python dasturlash asoslarini o'rganish</li>
+                                        <li>Telegram botlari va veb-ilovalarni yaratish</li>
+                                        <li>Haqiqiy loyihalarda tajriba to'plash</li>
+                                        <li>Kurs yakunida sertifikat olish</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd-event-details-content mb-30">
+                                <h3 class="bd-details-content-title">Talablar</h3>
+                                <div class="bd-post-details-list">
+                                    <ul>
+                                        <li>Dasturlash bo'yicha tajriba talab qilinmaydi</li>
+                                        <li>IT sohasiga qiziqish</li>
+                                        <li>Kompyuter va internet aloqasi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd-event-details-content">
+                                <h3 class="bd-details-content-title">Manzil</h3>
+                                <div class="bd-event-details-location">
+                                    <div class="address"><span class="icon"><i class="fa-regular fa-location-dot"></i></span> <a href="#">Tashkent, Chilanzar tumani</a></div>
+                                    <div class="address"><span class="icon"><i class="fa-light fa-envelope"></i></span> <a href="mailto:info@thompsonschool.uz">info@thompsonschool.uz</a></div>
+                                    <div class="address"><span class="icon"><i class="fa-regular fa-phone"></i></span> <a href="tel:+998901234567">+998 90 123 45 67</a></div>
+                                </div>
+                                <div class="bd-event-map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.1816149384267!2d69.20484161526218!3d41.28513197927447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0x9f9f9f9f9f9f9f9f!2sChilanzar%2C%20Tashkent!5e0!3m2!1sen!2suz!4v1730291234567!5m2!1sen!2suz" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-12">
+                        <div class="bd-event-sidebar-wrapper bd-event-sidebar-top sidebar-sticky">
+                            <div class="bd-event-sidebar mb-30">
+                                <div class="bd-event-countdown mb-20" id="countdown1" data-date="2025-05-08T10:00:00">
+                                    <div class="countdown-item bg-1" data-unit="days"></div>
+                                    <div class="countdown-item bg-2" data-unit="hours"></div>
+                                    <div class="countdown-item bg-3" data-unit="minutes"></div>
+                                    <div class="countdown-item bg-4" data-unit="seconds"></div>
+                                </div>
+                                <div class="bd-event-info mb-20">
+                                    <div class="bd-event-price-wrap d-flex-between">
+                                        <span class="title">Chipta narxi</span>
+                                        <div class="bd-event-price">
+                                            <span class="current-price">Bepul</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bd-event-info-list">
+                                    <ul>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-calendar-days"></i>Sana
+                                            </div>
+                                            <span class="value">8 May 2025</span>
+                                        </li>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-clock"></i>Vaqt
+                                            </div>
+                                            <span class="value">19:00 - 20:00</span>
+                                        </li>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-map-marker-alt"></i>Manzil
+                                            </div>
+                                            <span class="value">Zarafshan, Thompson School o'quv markazida</span>
+                                        </li>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-list"></i>Kategoriya
+                                            </div>
+                                            <span class="value">Dasturlash</span>
+                                        </li>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-globe"></i>Til
+                                            </div>
+                                            <span class="value">O'zbek, Rus</span>
+                                        </li>
+                                        <li>
+                                            <div class="label">
+                                                <i class="fa-solid fa-bookmark"></i>O'rinlar soni
+                                            </div>
+                                            <span class="value">100 o'rin</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd-event-sidebar mb-30">
+                                <div class="d-flex-between mb-20">
+                                    <h6>Ishtirokchilar soni</h6>
+                                    <div class="bd-event-ticket">
+                                        <span class="decrease">
+                                            <i class="fa-regular fa-minus"></i>
+                                        </span>
+                                        <input class="bd-event-ticket-input" type="text" value="1">
+                                        <span class="increase">
+                                            <i class="fa-regular fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="bd-sidebar-booking">
+                                    <form class="bd-sidebar-booking-form" action="#" method="get">
+                                        <div class="input-box">
+                                            <input type="text" placeholder="Ism">
+                                        </div>
+                                        <div class="input-box">
+                                            <input type="email" placeholder="Tel raqam">
+                                        </div>
+                                        <div class="input-box">
+                                            <textarea cols="30" rows="10" placeholder="Izoh yozing" spellcheck="false"></textarea>
+                                        </div>
+                                        <div class="booking-btn">
+                                            <button class="bd-btn btn-outline-border-primary w-100" type="submit">Joy band qilish</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- event details area end -->
+
+        <!-- event speaker area start -->
+        <section class="bd-event-speaker-area section-space-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="bd-section-wrapper section-title-space">
+                            <h2 class="bd-section-title">Taqdimot ma'ruzachilari</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-30">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bd-instructor-wrapper style-two">
+                            <div class="bd-instructor-item">
+                                <div class="bd-instructor-thumb-wrap">
+                                    <div class="bd-instructor-thumb">
+                                        <a href="instructor-details.html"><img src="assets/images/instructor/instructor-thumb-01.webp" alt="Shohrux Ibrohimov"></a>
+                                    </div>
+                                    <div class="bd-instructor-social theme-social has-white circle text-center">
+                                        <ul class="social-icon-list">
+                                            <li class="bd-icon-1"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                            <li class="bd-icon-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bd-instructor-info">
+                                    <h6 class="name underline"><a href="instructor-details.html">Shohrux Ibrohimov</a></h6>
+                                    <span>Python Backend eksperti</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="bd-instructor-wrapper style-two">
+                            <div class="bd-instructor-item">
+                                <div class="bd-instructor-thumb-wrap">
+                                    <div class="bd-instructor-thumb">
+                                        <a href="instructor-details.html"><img src="assets/images/instructor/instructor-thumb-02.webp" alt="Doston Kuziyev"></a>
+                                    </div>
+                                    <div class="bd-instructor-social theme-social has-white circle text-center">
+                                        <ul class="social-icon-list">
+                                            <li class="bd-icon-1"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                            <li class="bd-icon-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bd-instructor-info">
+                                    <h6 class="name underline"><a href="instructor-details.html">Doston Kuziyev</a></h6>
+                                    <span>Python Backend eksperti</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- event speaker area end -->
+
+
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- footer area start -->
+    <footer>
+        <div class="bd-footer-area style-two has-footer-space theme-black fix">
+            <div class="container">
+                <div class="row gy-30 justify-content-between">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="bd-footer-widget footer-2-col-1">
+                            <div class="bd-footer-widget-logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo-white.svg" alt="Thompson School Logo">
+                                </a>
+                            </div>
+                            <div class="bd-footer-widget-content">
+                                <p class="bd-footer-widget-description">
+                                    Thompson School Dasturlash Akademiyasida Python Backend kursi orqali amaliy loyihalar va tajribali o'qituvchilar yordamida IT sohasida karyera boshlang.
+                                </p>
+                                <div class="bd-footer-social">
+                                    <div class="theme-social has-white">
+                                        <ul class="social-icon-list">
+                                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-6">
+                        <div class="bd-footer-widget footer-2-col-2">
+                            <h6 class="bd-footer-widget-title">Sahifalar</h6>
+                            <div class="bd-footer-widget-links">
+                                <ul>
+                                    <li class="underline-two"><a href="index.html">Uy</a></li>
+                                    <li class="underline-two"><a href="contact.html">Biz haqimizda</a></li>
+                                    <li class="underline-two"><a href="course.html">Dasturlash kursi</a></li>
+                                    <li class="underline-two"><a href="price.html">Chegirmalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-6">
+                        <div class="bd-footer-widget footer-2-col-3">
+                            <h6 class="bd-footer-widget-title">Bizni ijtimoiy tarmoqlarda kuzatib boring</h6>
+                            <div class="bd-footer-widget-social">
+                                <div class="theme-social has-white">
+                                    <ul class="social-icon-list">
+                                        <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/plugins/easypie.js"></script>
+    <script src="assets/js/vendor/purecounter.js"></script>
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
+    <script src="assets/js/plugins/typed.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Countdown script -->
+    <script>
+        function countdown(elementId, targetDate) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const target = new Date(targetDate).getTime();
+                const distance = target - now;
+
+                if (distance < 0) {
+                    element.innerHTML = "Tadbir boshlandi!";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                element.querySelector('[data-unit="days"]').innerHTML = `<span>${days}</span><span>Kun</span>`;
+                element.querySelector('[data-unit="hours"]').innerHTML = `<span>${hours}</span><span>Soat</span>`;
+                element.querySelector('[data-unit="minutes"]').innerHTML = `<span>${minutes}</span><span>Daqiqa</span>`;
+                element.querySelector('[data-unit="seconds"]').innerHTML = `<span>${seconds}</span><span>Soniya</span>`;
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        countdown('countdown1', '2025-05-08T10:00:00');
+    </script>
+</body>
+</html>
