@@ -1,0 +1,68 @@
+/* Custom styles for the offline programming course website */
+.bd-hero-area {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f4f7ff 0%, #e6e9ff 100%);
+}
+
+.bd-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.bd-hero-subtitle {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.bd-about-area {
+    padding: 60px 0;
+}
+
+.bd-pricing-area {
+    padding: 60px 0;
+}
+
+.bd-pricing-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.bd-pricing-box:hover {
+    transform: translateY(-10px);
+}
+
+.bd-pricing-box.active {
+    border-color: #007bff;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+}
+
+.bd-cta-area {
+    padding: 60px 0;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+.bd-cta-box h2 {
+    color: #fff;
+}
+
+.bd-cta-box .bd-btn {
+    background: #fff;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .bd-hero-title {
+        font-size: 2rem;
+    }
+
+    .bd-hero-area {
+        padding: 40px 0;
+    }
+}
