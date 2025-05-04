@@ -1,0 +1,686 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Python Backend Dasturlash Kursi</title>
+    <meta name="description" content="Thompson School Python Backend Dasturlash Kursi haqida batafsil ma'lumot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.svg">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/plugins/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/icomoon.css">
+    <link rel="stylesheet" href="assets/css/vendor/spacing.css">
+    <link rel="stylesheet" href="assets/css/plugins/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- preloader start -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="bd-preloader-content">
+                    <div class="bd-preloader-logo">
+                        <div class="bd-preloader-circle">
+                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle stroke="#F5F5F5" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round"></circle>
+                            </svg>
+                        </div>
+                        <img src="assets/images/logo/preloader-icon.png" alt="">
+                    </div>
+                    <p class="bd-preloader-subtitle">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- Header area start -->
+    <header>
+        <div class="bd-header-transparent-two">
+            <div class="bd-header-area header-style-one" id="header-sticky">
+                <div class="bd-header-inner">
+                    <div class="bd-header-left">
+                        <div class="bd-header-logo">
+                            <a href="index.html" style="font-weight: bold; font-size: 24px; text-decoration: none; color:#07A169;">Dasturlash</a>
+                        </div>
+                        <div class="bd-header-category d-none d-lg-block">
+                            <div class="bd-category-btn">
+                                <i class="fa-solid fa-grid"></i> Bo'limlar
+                            </div>
+                            <div class="bd-category-dropdown">
+                                <nav>
+                                    <ul>
+                                        <li><a href="course.html">Backend Dasturlash kursi</a></li>
+                                        <li><a href="event.html">Taqdimotlar</a></li>
+                                        <li><a href="price.html">Chegirmalar</a></li>
+                                        <li><a href="contact.html">Biz bilan bog'laning</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-header-menu">
+                        <nav class="main-menu bd-mobile-menu-active d-none d-xl-block">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="index.html">Uy</a>    
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="course.html">Dasturlash kursi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="event.html">Taqdimotlar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="price.html">Chegirmalar</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="contact.html">Biz bilan bog'laning</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="bd-header-right">
+                        <div class="bd-header-meta">
+                            <button class="bd-search-open-btn meta-icon" type="button"><i class="fa-regular fa-magnifying-glass"></i></button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="bd-header-hamburger">
+                            <div class="sidebar-toggle">
+                                <a class="bar-icon" href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="bd-offcanvas-area">
+            <div class="bd-offcanvas-wrapper">
+                <div class="bd-offcanvas-content">
+                    <div class="bd-offcanvas-top d-flex justify-content-between align-items-center mb-30">
+                        <div class="bd-offcanvas-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.svg" alt="logo not found">
+                            </a>
+                        </div>
+                        <div class="bd-offcanvas-close">
+                            <button class="bd-offcanvas-close-icon animation--flip">
+                                <span class="bd-offcanvas-m-lines">
+                                    <span class="bd-offcanvas-m-line line--1"></span>
+                                    <span class="bd-offcanvas-m-line line--2"></span>
+                                    <span class="bd-offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bd-offcanvas-search mb-30">
+                        <form action="#">
+                            <input type="text" name="bd-offcanvasSearch" placeholder="Search here">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="bd-mobile-menu-smaller">
+                        <div class="bd-offcanvas-menu mb-30">
+                            <nav></nav>
+                        </div>
+                    </div>
+                    <div class="bd-offcanvas-about d-none d-lg-block mb-30">
+                        <h4 class="bd-offcanvas-title-meta">Thompson School haqida</h4>
+                        <p>Thompson School dasturlash kurslari haqida batafsil ma'lumot olishingiz mumkin.</p>
+                    </div>
+                    <div class="bd-offcanvas-social">
+                        <h4 class="bd-offcanvas-title-meta">Bizni kuzatib boring</h4>
+                        <div class="theme-social">
+                            <ul class="social-icon-list">
+                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bd-offcanvas-overlay"></div>
+    <div class="bd-offcanvas-overlay-white"></div>
+    <!-- Offcanvas area end -->
+
+    <!-- search popup area start -->
+    <div class="bd-search-popup-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bd-search-popup">
+                        <div class="bd-search-form">
+                            <form action="#">
+                                <div class="bd-search-input">
+                                    <input type="search" name="search" placeholder="Type here to search ...">
+                                    <div class="bd-search-submit">
+                                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="bd-search-close">
+                                <div class="bd-search-close-btn">
+                                    <button><i class="fa-thin fa-close"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search popup overlay -->
+    <div class="bd-search-overlay"></div>
+    <!-- search popup area end -->
+
+    <!-- Body main wrapper start -->
+    <main>
+        <!-- breadcrumb area start -->
+        <section class="bd-breadcrumb-area p-relative fix z-index-11">
+            <div class="bd-breadcrumb-bg-two" data-background="assets/images/breadcrumb/c.png"></div>
+            <div class="bd-breadcrumb-wrapper p-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="bd-breadcrumb style-two d-flex-center">
+                                <div class="bd-breadcrumb-content">
+                                    <h1 class="bd-breadcrumb-title">Python Backend Dasturlash Kursi</h1>
+                                    <div class="bd-breadcrumb-list">
+                                        <span><a href="index.html">Thompson School</a></span>
+                                        <span class="divider"><i class="fa-regular fa-angle-right"></i></span>
+                                        <span class="active">Python Backend Dasturlash Kursi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-breadcrumb-shape">
+                        <div class="shape-1"><img src="assets/images/shape/breadcrumb-shape-1.webp" alt="shape"></div>
+                        <div class="shape-3"><img src="assets/images/shape/bulb-shape.webp" alt="shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area end -->
+
+        <!-- course details area start -->
+        <section class="bd-course-details-area bd-course-details-top section-space-bottom">
+            <div class="container">
+                <div class="row gy-30">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8">
+                        <div class="bd-course-details-wrapper mb-30">
+                            <div class="bd-course-details-heading mb-30">
+                                <h2 class="bd-course-details-title mb-5">Python Backend Dasturlash Kursi</h2>
+                                <div class="bd-course-details-rating">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span>(150 sharhlar)</span>
+                                </div>
+                            </div>
+                            <div class="bd-course-details-meta mb-30">
+                                <div class="bd-course-author border-line-meta">
+                                    <div class="thumb"><a href="#"><img src="assets/images/avatar/avatar.webp" alt="instruktor"></a></div>
+                                    <div class="authour-meta">
+                                        <span class="subtitle">Muallif</span>
+                                        <div class="name"><a href="instructor-details.html">Jamshid Usmonov</a></div>
+                                    </div>
+                                </div>
+                                <div class="bd-course-details-meta-item border-line-meta">
+                                    <p class="title">Jami ro'yxatdan o'tganlar</p>
+                                    <span class="subtitle">500+</span>
+                                </div>
+                                <div class="bd-course-details-meta-item border-line-meta">
+                                    <p class="title">Oxirgi yangilanish</p>
+                                    <span class="subtitle">1 May 2025</span>
+                                </div>
+                                <div class="bd-course-details-meta-item">
+                                    <p class="title">Kategoriya</p>
+                                    <span class="subtitle"><a href="#">Backend Dasturlash</a></span>
+                                </div>
+                            </div>
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">Tavsif</h3>
+                                <p class="description">Thompson School Dasturlash Akademiyasining Python Backend kursi sizni noldan professional backend dasturchigacha yetishtiradi. Tashkentdagi offline ta'limda Python, Django, PostgreSQL va Telegram botlari yaratishni o'rganasiz. Amaliy loyihalar va tajribali o'qituvchilar yordamida IT sohasida karyera boshlash imkoniyatiga ega bo'lasiz.</p>
+                            </div>
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">Nimalarni o'rganasiz</h3>
+                                <div class="bd-course-details-list-box">
+                                    <div class="bd-course-details-list">
+                                        <ul>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> Python dasturlash asoslari va ilg'or tushunchalar</li>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> Django framework yordamida veb-ilovalar yaratish</li>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> PostgreSQL bilan ma'lumotlar bazasini boshqarish</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bd-course-details-list">
+                                        <ul>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> Telegram botlarini ishlab chiqish</li>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> Haqiqiy loyihalarda ishtirok etish</li>
+                                            <li><span class="list-icon success"><i class="fa-solid fa-check"></i></span> Kurs yakunida sertifikat olish</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">Talablar</h3>
+                                <div class="bd-post-details-list">
+                                    <ul>
+                                        <li>Dasturlash bo'yicha tajriba talab qilinmaydi</li>
+                                        <li>IT sohasiga qiziqish</li>
+                                        <li>Kompyuter va internet aloqasi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd-course-curriculum mb-30">
+                                <h3 class="bd-course-details-content-title">Dastur</h3>
+                                <span class="bd-course-curriculum-overview">40 dars | 3 oy</span>
+                                <div class="accordion-common-style accordion-transparent">
+                                    <div class="accordion" id="accordionExample">
+                                        <!-- Section 1 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span>Q.</span> Python dasturlash asoslari
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Python sintaksisi va asosiy tushunchalar</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">08:45</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">O'zgaruvchilar va ma'lumot turlari</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">10:22</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Section 2 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span>Q.</span> Django Framework bilan ishlash
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Django loyihasini sozlash</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">12:30</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Modellar va ma'lumotlar bazasi bilan ishlash</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">15:10</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Section 3 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <span>Q.</span> PostgreSQL bilan ma'lumotlar bazasi
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">PostgreSQL sozlamalari va jadvallar yaratish</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">18:30</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Django va PostgreSQL integratsiyasi</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">14:45</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Section 4 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <span>Q.</span> Telegram botlari yaratish
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Telegram API bilan ishlash</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">16:20</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Foydalanuvchi interfeysli botlar ishlab chiqish</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">11:45</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Section 5 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    <span>Q.</span> Amaliy loyihalar va sertifikatlash
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Haqiqiy loyihalarda ishlash</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">12:00</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="bd-course-curriculum-content d-flex-between">
+                                                        <div class="bd-course-curriculum-info d-flex-items gap-10">
+                                                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                                            <p class="title">Kursni yakunlash va sertifikat olish</p>
+                                                        </div>
+                                                        <div class="bd-course-curriculum-meta d-flex-items gap-10">
+                                                            <span class="duration">13:25</span>
+                                                            <span class="status"><i class="fa-solid fa-lock"></i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bd-course-instructors mb-30">
+                                <h3 class="bd-course-details-content-title">Instruktor</h3>
+                                <div class="bd-course-instructors-content">
+                                    <div class="thumb">
+                                        <a href="#"><img src="assets/images/avatar/avatar.webp" alt="Jamshid Usmonov"></a>
+                                    </div>
+                                    <div class="bd-course-instructors-info">
+                                        <div class="mb-5">
+                                            <h6 class="name"><a href="#">Jamshid Usmonov</a></h6>
+                                            <span class="designation">Python Backend Eksperti, Thompson School</span>
+                                        </div>
+                                        <div class="bd-course-instructors-rating mb-5">
+                                            <div class="icon"><i class="fas fa-star"></i></div>
+                                            <span>4.8 (50 sharhlar)</span>
+                                        </div>
+                                        <div class="bd-course-instructors-course mb-15">
+                                            <div class="item">
+                                                <i class="fas fa-desktop"></i>
+                                                <span>3 Kurs</span>
+                                            </div>
+                                            <div class="item">
+                                                <i class="far fa-user-friends"></i>
+                                                <span>1,000+ Talaba</span>
+                                            </div>
+                                        </div>
+                                        <div class="theme-social">
+                                            <ul class="social-icon-list">
+                                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bd-course-instructors-bio mt-15">
+                                    <p>Jamshid Usmonov 5 yildan ortiq Python Backend dasturlash tajribasiga ega. U Django va PostgreSQL yordamida ko'plab loyihalarni muvaffaqiyatli amalga oshirgan va Thompson School’da talabalarga amaliy bilimlar beradi. Uning maqsadi – talabalarni IT sohasida muvaffaqiyatli karyeraga tayyorlash.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4">
+                        <div class="bd-course-sidebar-widget sidebar-right sidebar-sticky">
+                            <div class="bd-course-sidebar-widget-thumb mb-20 p-relative">
+                                <img src="assets/images/course/course-video.webp" alt="Python Backend Kursi">
+                                <div class="thumb-btn">
+                                    <a class="bd-video-btn popup-video has-bg" href="https://www.youtube.com/watch?v=HKk4oLIzhhM">
+                                        <span class="icon"><i class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bd-course-sidebar-widget-price mb-20">
+                                <div class="bd-course-price">
+                                    <span class="current-price">500 ming oyiga</span>
+                                </div>
+                            </div>
+                            <div class="bd-course-sidebar-widget-list mb-20">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-filter"></i>
+                                            <span>Daraja</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>Boshlang'ich</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-desktop"></i>
+                                            <span>Darslar</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>144 + Darslar</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="far fa-clock"></i>
+                                            <span>Davomiylik</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>12 Oy</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-th-list"></i>
+                                            <span>Kategoriya</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>Backend Dasturlash</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-globe"></i>
+                                            <span>Til</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>O'zbek</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-award"></i>
+                                            <span>Sertifikat</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>Beriladi</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-file-alt"></i>
+                                            <span>Loyihalar</span>
+                                        </div>
+                                        <div class="video-corse-info">
+                                            <span>3+</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd-course-sidebar-widget-btn d-flex-between flex-wrap gap-15">
+                                <a href="contact.html" class="bd-btn btn-primary w-100"><span class="left-icon"><i class="fal fa-user-plus"></i></span> Kursga yozilish</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course details area end -->
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- footer area start -->
+    <footer>
+        <div class="bd-footer-area style-two has-footer-space theme-black fix">
+            <div class="container">
+                <div class="row gy-30 justify-content-between">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="bd-footer-widget footer-2-col-1">
+                            <div class="bd-footer-widget-logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo-white.svg" alt="Thompson School Logo">
+                                </a>
+                            </div>
+                            <div class="bd-footer-widget-content">
+                                <p class="bd-footer-widget-description">
+                                    Thompson School Dasturlash Akademiyasida Python Backend kursi orqali amaliy loyihalar va tajribali o'qituvchilar yordamida IT sohasida karyera boshlang.
+                                </p>
+                                <div class="bd-footer-social">
+                                    <div class="theme-social has-white">
+                                        <ul class="social-icon-list">
+                                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-6">
+                        <div class="bd-footer-widget footer-2-col-2">
+                            <h6 class="bd-footer-widget-title">Sahifalar</h6>
+                            <div class="bd-footer-widget-links">
+                                <ul>
+                                    <li class="underline-two"><a href="index.html">Uy</a></li>
+                                    <li class="underline-two"><a href="contact.html">Biz haqimizda</a></li>
+                                    <li class="underline-two"><a href="course.html">Dasturlash kursi</a></li>
+                                    <li class="underline-two"><a href="price.html">Chegirmalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-6">
+                        <div class="bd-footer-widget footer-2-col-3">
+                            <h6 class="bd-footer-widget-title">Bizni ijtimoiy tarmoqlarda kuzatib boring</h6>
+                            <div class="bd-footer-widget-social">
+                                <div class="theme-social has-white">
+                                    <ul class="social-icon-list">
+                                        <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/plugins/easypie.js"></script>
+    <script src="assets/js/vendor/purecounter.js"></script>
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
+    <script src="assets/js/plugins/typed.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
