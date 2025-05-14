@@ -889,7 +889,30 @@
         </svg>
     </div>
     <!-- Backtotop end -->
-
+    
+  <script>
+    const tg = window.Telegram.WebApp;
+    
+    // WebApp-ni ishga tushirish
+    tg.expand(); // To'liq ekranga ochish
+    tg.enableClosingConfirmation(); // Tasodifiy yopilishdan himoya
+    
+    // Foydalanuvchi ma'lumotlari
+    const user = tg.initDataUnsafe?.user;
+    console.log('Telegram user:', user);
+    
+    // Botga ma'lumot yuborish uchun funktsiya
+    function sendDataToBot(data) {
+      tg.sendData(JSON.stringify(data));
+      tg.close();
+    }
+    
+    // WebApp tugashi uchun event listener
+    tg.onEvent('viewportChanged', () => {
+      console.log('Viewport changed:', tg.viewportStableHeight);
+    });
+  </script>
+    
     <!-- JS here -->
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins/waypoints.min.js"></script>
