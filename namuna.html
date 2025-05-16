@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga App - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5ff;
+            color: #333;
+            overflow-x: hidden;
+            padding-bottom: 70px; /* Space for bottom nav */
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Daily Challenge Section */
+        .daily-challenge {
+            margin: 20px;
+            background: linear-gradient(135deg, #d4b8ff 0%, #a8d5ff 100%);
+            border-radius: 20px;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .daily-challenge h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .daily-challenge p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .daily-challenge .avatars {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .daily-challenge .avatars img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-left: -10px;
+        }
+
+        .daily-challenge .avatars .more {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-left: -10px;
+        }
+
+        /* Calendar */
+        .calendar {
+            margin: 20px;
+        }
+
+        .calendar .days {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .calendar .day {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .calendar .day.active {
+            background-color: #a8d5ff;
+            color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        /* Plan Section */
+        .plan {
+            margin: 20px;
+        }
+
+        .plan h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .plan .cards {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+
+        .plan .card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            width: 150px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan .card h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .plan .card p {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .plan .card .trainer {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .plan .card .trainer img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .plan .card .trainer span {
+            font-size: 12px;
+            color: #333;
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .bottom-nav a {
+            text-align: center;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .bottom-nav a.active {
+            color: #a8d5ff;
+        }
+
+        .bottom-nav i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="https://via.placeholder.com/40" alt="Profile Picture">
+        <h1>Hello, Sandra<br>Today 25 Nov</h1>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Daily Challenge -->
+    <div class="daily-challenge">
+        <h2>Daily Challenge</h2>
+        <p>Do your challenge before 09:00 AM</p>
+        <div class="avatars">
+            <img src="https://via.placeholder.com/30" alt="Avatar 1">
+            <img src="https://via.placeholder.com/30" alt="Avatar 2">
+            <img src="https://via.placeholder.com/30" alt="Avatar 3">
+            <div class="more">+4</div>
+        </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar">
+        <div class="days">
+            <div class="day">Sun<br>22</div>
+            <div class="day">Mon<br>23</div>
+            <div class="day">Tue<br>24</div>
+            <div class="day active">Wed<br>25</div>
+            <div class="day">Thu<br>26</div>
+            <div class="day">Fri<br>27</div>
+            <div class="day">Sat<br>28</div>
+        </div>
+    </div>
+
+    <!-- Plan Section -->
+    <div class="plan">
+        <h3>Your Plan</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Yoga Group</h4>
+                <p>14:00 - 15:00</p>
+                <p>A5 room</p>
+                <div class="trainer">
+                    <img src="https://via.placeholder.com/20" alt="Trainer">
+                    <span>Trainer: Tiffany Way</span>
+                </div>
+            </div>
+            <div class="card">
+                <h4>Balance</h4>
+                <p>18:00 - 19:30</p>
+                <p>A2 room</p>
+                <div class="trainer">
+                    <img src="https://via.placeholder.com/20" alt="Trainer">
+                    <span>Trainer: Tiffany Way</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="#" class="active"><i class="fas fa-home"></i><br>Home</a>
+        <a href="#"><i class="fas fa-th"></i><br>Plan</a>
+        <a href="#"><i class="fas fa-list"></i><br>Stats</a>
+        <a href="#"><i class="fas fa-user"></i><br>Profile</a>
+    </div>
+
+    <script>
+        // Add any interactivity if needed
+        document.querySelectorAll('.bottom-nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.bottom-nav a').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
